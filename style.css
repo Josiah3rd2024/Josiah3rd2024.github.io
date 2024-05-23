@@ -1,0 +1,134 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    font-family: Arial, sans-serif; /* Modern, sans-serif font */
+   }
+
+h1 {
+    color: #90ee90; /* light Green */
+    text-align: center; /* Center-align text */
+   }
+
+p, li {
+    padding: 8px;
+    line-height: 1.6; /* Makes text easier to read */
+   }
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #007BFF; /* Blue line under headers */
+   }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+
+th, td {
+    border: 1px solid #90ee90;
+    padding: 8px;
+    text-align: left;
+   }
+
+th {
+    background-color: #000000;
+   }
+
+form {
+    margin-top: 20px;
+   }
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+   }
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+   }
+
+button:hover {
+    background-color: #0056b3;
+   }
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+   }
+
+label, input {
+    flex: 1; /* Allow input and label to fill the space */
+   }
+/* Navigation Bar Styles */
+nav {
+    background-color: #333; /* Dark gray background */
+    overflow: hidden; /* Clear floats */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    float: left; /* Make list items horizontal */
+}
+
+nav li a {
+    display: block; /* Make links fill the entire list item */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+nav li a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black; /* Black text color on hover */
+}
+
+a, button {
+    padding: 15px;
+    font-size: 16px; /* Larger font size for better readability */
+   }
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (tablets and smaller) */
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        text-align: left;
+        padding: 12px 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide (mobile devices) */
+    h1 {
+        font-size: 24px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+}
